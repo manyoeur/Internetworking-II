@@ -82,7 +82,7 @@ interface Gig 0/1
  no shutdown
  description R3 to R2
  ip address 23.23.23.2 255.255.255.252
- ipv6 address 2001:db8:cacad:23.23::2/64
+ ipv6 address 2001:db8:acad:23.23::2/64
 interface Gig0/0
  no shutdown
  description R3 to  R4
