@@ -151,7 +151,7 @@ write
 ### On router R3
 ```
 router isis bbu_c101
-net 49.0012.0012.0012.0002.00
+net 49.0003.0003.0003.0003.00
 is-type level-1-2
 exit
 interface gig 0/0
@@ -164,7 +164,7 @@ write
 ### On router R4
 ```
 router isis bbu_c101
-net 49.0012.0012.0012.0002.00
+net 49.0012.0045.0045.0004.00
 is-type level-1
 exit
 interface gig 0/0
@@ -179,7 +179,7 @@ write
 ### On router R5
 ```
 router isis bbu_c101
-net 49.0012.0012.0012.0002.00
+net 49.0012.0045.0045.0005.00
 is-type level-1
 exit
 interface gig 0/0
