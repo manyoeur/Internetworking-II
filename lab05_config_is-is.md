@@ -120,7 +120,7 @@ interface Gig0/1
  ipv6 address 2001:db8:acad:5::1/64
 ```
 ## IV. Configure IS-IS Protocol
-### On router R1
+### R1
 ```
 router isis bbu_c101
 net 49.0012.0012.0012.0001.00
@@ -133,7 +133,7 @@ interface gig 0/1
 end
 write
 ```
-### On router R2
+### R2
 ```
 router isis bbu_c101
 net 49.0012.0012.0012.0002.00
@@ -148,7 +148,7 @@ interface gig 0/2
 end
 write
 ```
-### On router R3
+### R3
 ```
 router isis bbu_c101
 net 49.0003.0003.0003.0003.00
@@ -161,7 +161,7 @@ interface gig 0/1
 end
 write
 ```
-### On router R4
+### R4
 ```
 router isis bbu_c101
 net 49.0045.0045.0045.0004.00
@@ -176,7 +176,7 @@ interface gig 0/2
 end
 write
 ```
-### On router R5
+### R5
 ```
 router isis bbu_c101
 net 49.0045.0045.0045.0005.00
