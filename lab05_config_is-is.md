@@ -51,12 +51,12 @@ interface Gig 0/0
  no shutdown
  description R1 to R2
  ip address 12.12.12.1 255.255.255.252
- ipv6 address 2001:db8:cacad:1212::1/64
+ ipv6 address 2001:db8:acad:1212::1/64
 interface Gig0/1
  no shutdown
  description R1 to PC1
  ip address 192.168.1.1 255.255.255.0
- ipv6 address 2001:db8:cacad:1111::1/64
+ ipv6 address 2001:db8:acad:1111::1/64
 ```
 ### 1. Assign IP address to R2
 ```
