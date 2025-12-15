@@ -120,3 +120,17 @@ interface Gig0/1
  ip address 192.168.5.1 255.255.255.0
  ipv6 address 2001:db8:acad:5::1/64
 ```
+## Configure IS-IS Protocol
+### On router R1
+```
+router isis bbu_c101
+net 49.0012.0012.0012.0001.00
+is-type level-1
+exit
+interface gig 0/0
+ ip router isis bbu_c101
+interface gig 0/1
+ ip router isis bbu_c101
+end
+write
+```
