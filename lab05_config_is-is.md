@@ -165,7 +165,7 @@ write
 ```
 router isis bbu_c101
 net 49.0045.0045.0045.0004.00
-is-type level-1
+is-type level-2
 exit
 interface gig 0/0
  ip router isis bbu_c101
@@ -180,7 +180,7 @@ write
 ```
 router isis bbu_c101
 net 49.0045.0045.0045.0005.00
-is-type level-1
+is-type level-2
 exit
 interface gig 0/0
  ip router isis bbu_c101
