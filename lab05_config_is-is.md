@@ -1,6 +1,7 @@
 # Configure IS-IS
 ## I. Network topology
-<img width="1627" height="633" alt="image" src="https://github.com/user-attachments/assets/2c938fa2-b873-48ee-82fc-206600dbb9e4" />
+<img width="1604" height="680" alt="is-is lab" src="https://github.com/user-attachments/assets/abfa806e-3a6b-4eae-8464-a4eb466ddf36" />
+
 
 # Lab prerequisite
 In this lab you will need:
