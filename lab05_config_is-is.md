@@ -134,3 +134,18 @@ interface gig 0/1
 end
 write
 ```
+### On router R2
+```
+router isis bbu_c101
+net 49.0012.0012.0012.0002.00
+is-type level-1-2
+exit
+interface gig 0/0
+ ip router isis bbu_c101
+interface gig 0/1
+ ip router isis bbu_c101
+interface gig 0/2
+ ip router isis bbu_c101
+end
+write
+```
