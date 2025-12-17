@@ -1,7 +1,6 @@
 # Configure IS-IS
 ## I. Network topology
-
-
+<img width="1572" height="969" alt="IS-IS Single Area" src="https://github.com/user-attachments/assets/e5778a84-844f-47e1-8a17-1b47e036109f" />
 # Lab prerequisite
 In this lab you will need:
 * GNS3
