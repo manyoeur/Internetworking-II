@@ -1,6 +1,7 @@
 # Configure IS-IS
 ## I. Network topology
 <img width="1572" height="969" alt="IS-IS Single Area" src="https://github.com/user-attachments/assets/e5778a84-844f-47e1-8a17-1b47e036109f" />
+
 # Lab prerequisite
 In this lab you will need:
 * GNS3
@@ -41,6 +42,11 @@ interface Gig0/1
  description R1 to PC1
  ip address 192.168.1.1 255.255.255.0
  ipv6 address 2001:db8:acad:1111::1/64
+interface Gig0/2
+ no shutdown
+ description R1 to PC2
+ ip address 192.168.2.1 255.255.255.0
+ ipv6 address 2001:db8:acad:2222::1/64
 ```
 ### 1. Assign IP address to R2
 ```
@@ -56,9 +62,14 @@ interface Gig0/1
  ipv6 address 2001:db8:acad:2323::1/64
 interface Gig0/2
  no shutdown
- description R2 to  PC2
- ip address 192.168.2.1 255.255.255.0
- ipv6 address 2001:db8:acad:2::1/64
+ description R2 to  PC3
+ ip address 192.168.3.1 255.255.255.0
+ ipv6 address 2001:db8:acad:3::1/64
+interface Gig0/3
+ no shutdown
+ description R2 to  PC3
+ ip address 192.168.4.1 255.255.255.0
+ ipv6 address 2001:db8:acad:4::1/64
 ```
 ### 3. Assign IP address to R3
 ```
@@ -69,6 +80,12 @@ interface Gig 0/1
  ipv6 address 2001:db8:acad:23.23::2/64
 interface Gig0/0
  no shutdown
- description R3 to  R4
- ip address 34.34.34.1 255.255.255.252
- ipv6 address 2001:db8:acad:3434::1/64
+ description R3 to  PC5
+ ip address 192.168.5.1 255.255.255.0
+ ipv6 address 2001:db8:acad:5::1/64
+interface Gig0/2
+ no shutdown
+ description R3 to  PC6
+ ip address 192.168.6.1 255.255.255.0
+ ipv6 address 2001:db8:acad:6::1/64
+```
