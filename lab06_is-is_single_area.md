@@ -86,3 +86,43 @@ interface Gig0/2
  ip address 192.168.6.1 255.255.255.0
  ipv6 address 2001:db8:acad:6::1/64
 ```
+## IS-IS Configuration
+### R1
+```
+router isis cisco
+net 49.0010.1111.1111.1111.00
+is-type level-1
+interface gig 0/0
+ ip router isis cisco
+interface gig 0/1
+ ip router isis cisco
+interface gig 0/2
+ ip router isis cisco
+```
+### R2
+```
+router isis cisco
+net 49.0010.2222.2222.2222.00
+is-type level-1
+interface gig 0/0
+ ip router isis cisco
+interface gig 0/1
+ ip router isis cisco
+interface gig 0/2
+ ip router isis cisco
+interface gig 0/3
+ ip router isis cisco
+```
+### R3
+```
+router isis cisco
+net 49.0010.3333.3333.3333.00
+is-type level-1
+interface gig 0/0
+ ip router isis cisco
+interface gig 0/1
+ ip router isis cisco
+interface gig 0/2
+ ip router isis cisco
+```
+
