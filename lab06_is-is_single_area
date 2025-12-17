@@ -1,1 +1,31 @@
+# Configure IS-IS
+## I. Network topology
+<img width="1957" height="817" alt="is-is lab" src="https://github.com/user-attachments/assets/7058790d-3935-4c84-ac0f-6685b5a71845" />
 
+# Lab prerequisite
+In this lab you will need:
+* GNS3
+* Cisco IOSv ( you can download here [link](https://drive.google.com/drive/folders/13J-2qJd0hueUc6vDdouA8ZVSIBcX6im-?usp=sharing) if you don't have)
+
+## II. Basic configuration
+### 1. Set hostname and enable secret password to R1
+```
+enable
+configure terminal
+hostname R1
+enable secret cisco
+```
+### 2. Set hostname and enable secret password to R2
+```
+enable
+configure terminal
+hostname R2
+enable secret cisco
+```
+### 3. Set hostname and enable secret password to R3
+```
+enable
+configure terminal
+hostname R3
+enable secret cisco
+```
