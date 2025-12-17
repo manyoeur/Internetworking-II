@@ -10,21 +10,18 @@ In this lab you will need:
 ## II. Basic configuration
 ### 1. Set hostname and enable secret password to R1
 ```
-enable
 configure terminal
 hostname R1
 enable secret cisco
 ```
 ### 2. Set hostname and enable secret password to R2
 ```
-enable
 configure terminal
 hostname R2
 enable secret cisco
 ```
 ### 3. Set hostname and enable secret password to R3
 ```
-enable
 configure terminal
 hostname R3
 enable secret cisco
