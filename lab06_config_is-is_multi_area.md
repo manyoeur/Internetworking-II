@@ -128,10 +128,10 @@ net 49.0012.0000.0000.0001.00
 exit
 interface gig 0/0
  ip router isis bbu_c101
-isis circuit-type level-1
+ isis circuit-type level-1
 interface gig 0/1
  ip router isis
-isis circuit-type level-1
+ isis circuit-type level-1
 end
 write
 ```
@@ -142,13 +142,13 @@ net 49.0012.0000.0000.0002.00
 exit
 interface gig 0/0
  ip router isis
-isis circuit-type level-1
+ isis circuit-type level-1
 interface gig 0/1
  ip router isis
-isis circuit-type level-2-only
+ isis circuit-type level-2-only
 interface gig 0/2
  ip router isis
-isis circuit-type level-1
+ isis circuit-type level-1
 end
 write
 ```
@@ -172,13 +172,13 @@ net 49.0045.0000.0000.0004.00
 exit
 interface gig 0/0
  ip router isis
-isis circuit-type level-2-only
+ isis circuit-type level-2-only
 interface gig 0/1
  ip router isis
-isis circuit-type level-1
+ isis circuit-type level-1
 interface gig 0/2
  ip router isis
-isis circuit-type level-1
+ isis circuit-type level-1
 end
 write
 ```
@@ -189,10 +189,10 @@ net 49.0045.0000.0000.0005.00
 exit
 interface gig 0/0
  ip router isis
-isis circuit-type level-1
+ isis circuit-type level-1
 interface gig 0/1
  ip router isis
-isis circuit-type level-1
+ isis circuit-type level-1
 end
 write
 ```
