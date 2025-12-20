@@ -216,3 +216,53 @@ Gateway of last resort is 12.12.12.2 to network 0.0.0.0
 i*L1  0.0.0.0/0 [115/10] via 12.12.12.2, 00:04:10, GigabitEthernet0/0
 i L1  192.168.2.0/24 [115/20] via 12.12.12.2, 00:05:26, GigabitEthernet0/0
 </pre>
+```
+R2(config-if)#do show ip route isis
+```
+<pre>
+Codes: L - local, C - connected, S - static, R - RIP, M - mobile, B - BGP
+       D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area
+       N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+       E1 - OSPF external type 1, E2 - OSPF external type 2
+       i - IS-IS, su - IS-IS summary, L1 - IS-IS level-1, L2 - IS-IS level-2
+       ia - IS-IS inter area, * - candidate default, U - per-user static route
+       o - ODR, P - periodic downloaded static route, H - NHRP, l - LISP
+       a - application route
+       + - replicated route, % - next hop override, p - overrides from PfR
+
+Gateway of last resort is not set
+
+      34.0.0.0/30 is subnetted, 1 subnets
+i L2     34.34.34.0 [115/20] via 23.23.23.2, 00:03:20, GigabitEthernet0/1
+      45.0.0.0/30 is subnetted, 1 subnets
+i L2     45.45.45.0 [115/30] via 23.23.23.2, 00:01:17, GigabitEthernet0/1
+i L1  192.168.1.0/24 [115/20] via 12.12.12.1, 00:04:31, GigabitEthernet0/0
+i L2  192.168.4.0/24 [115/30] via 23.23.23.2, 00:01:17, GigabitEthernet0/1
+i L2  192.168.5.0/24 [115/40] via 23.23.23.2, 00:00:23, GigabitEthernet0/1
+</pre>
+```
+R3#show ip route isis
+```
+<pre>
+Codes: L - local, C - connected, S - static, R - RIP, M - mobile, B - BGP
+       D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area
+       N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+       E1 - OSPF external type 1, E2 - OSPF external type 2
+       i - IS-IS, su - IS-IS summary, L1 - IS-IS level-1, L2 - IS-IS level-2
+       ia - IS-IS inter area, * - candidate default, U - per-user static route
+       o - ODR, P - periodic downloaded static route, H - NHRP, l - LISP
+       a - application route
+       + - replicated route, % - next hop override, p - overrides from PfR
+
+Gateway of last resort is not set
+
+      12.0.0.0/30 is subnetted, 1 subnets
+i L2     12.12.12.0 [115/20] via 23.23.23.1, 00:03:35, GigabitEthernet0/1
+      45.0.0.0/30 is subnetted, 1 subnets
+i L2     45.45.45.0 [115/20] via 34.34.34.2, 00:01:31, GigabitEthernet0/0
+i L2  192.168.1.0/24 [115/30] via 23.23.23.1, 00:03:35, GigabitEthernet0/1
+i L2  192.168.2.0/24 [115/20] via 23.23.23.1, 00:03:35, GigabitEthernet0/1
+i L2  192.168.4.0/24 [115/20] via 34.34.34.2, 00:01:31, GigabitEthernet0/0
+i L2  192.168.5.0/24 [115/30] via 34.34.34.2, 00:00:37, GigabitEthernet0/0
+R3#
+</pre>
