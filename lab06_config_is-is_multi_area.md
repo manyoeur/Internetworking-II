@@ -1,6 +1,7 @@
 # Configure IS-IS
 ## I. Network topology
-<img width="1957" height="817" alt="is-is lab" src="https://github.com/user-attachments/assets/7058790d-3935-4c84-ac0f-6685b5a71845" />
+<img width="1608" height="612" alt="image" src="https://github.com/user-attachments/assets/eeec5614-df27-4467-a1e2-615e541b8469" />
+
 
 # Lab prerequisite
 In this lab you will need:
@@ -122,70 +123,76 @@ interface Gig0/1
 ## IV. Configure IS-IS Protocol
 ### R1
 ```
-router isis bbu_c101
-net 49.0012.0012.0012.0001.00
-is-type level-1
+router isis
+net 49.0012.0000.0000.0001.00
 exit
 interface gig 0/0
  ip router isis bbu_c101
+isis circuit-type level-1
 interface gig 0/1
- ip router isis bbu_c101
+ ip router isis
+isis circuit-type level-1
 end
 write
 ```
 ### R2
 ```
 router isis bbu_c101
-net 49.0012.0012.0012.0002.00
-is-type level-1
+net 49.0012.0000.0000.0002.00
 exit
 interface gig 0/0
- ip router isis bbu_c101
+ ip router isis
+isis circuit-type level-1
 interface gig 0/1
- ip router isis bbu_c101
+ ip router isis
+isis circuit-type level-2-only
 interface gig 0/2
- ip router isis bbu_c101
+ ip router isis
+isis circuit-type level-1
 end
 write
 ```
 ### R3
 ```
-router isis bbu_c101
-net 49.0003.0003.0003.0003.00
+router isis
+net 49.0003.0000.0000.0003.00
 is-type level-1-2
 exit
 interface gig 0/0
- ip router isis bbu_c101
+ ip router isis
 interface gig 0/1
- ip router isis bbu_c101
+ ip router isis
 end
 write
 ```
 ### R4
 ```
-router isis bbu_c101
-net 49.0045.0045.0045.0004.00
-is-type level-2
+router isis
+net 49.0045.0000.0000.0004.00
 exit
 interface gig 0/0
- ip router isis bbu_c101
+ ip router isis
+isis circuit-type level-2-only
 interface gig 0/1
- ip router isis bbu_c101
+ ip router isis
+isis circuit-type level-1
 interface gig 0/2
- ip router isis bbu_c101
+ ip router isis
+isis circuit-type level-1
 end
 write
 ```
 ### R5
 ```
-router isis bbu_c101
-net 49.0045.0045.0045.0005.00
-is-type level-2
+router isis
+net 49.0045.0000.0000.0005.00
 exit
 interface gig 0/0
- ip router isis bbu_c101
+ ip router isis
+isis circuit-type level-1
 interface gig 0/1
- ip router isis bbu_c101
+ ip router isis
+isis circuit-type level-1
 end
 write
 ```
