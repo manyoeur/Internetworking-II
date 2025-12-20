@@ -196,3 +196,22 @@ interface gig 0/1
 end
 write
 ```
+## V. Verify IS-IS Configuration
+```
+R1(config-if)#do show ip route isis
+```
+
+Codes: L - local, C - connected, S - static, R - RIP, M - mobile, B - BGP
+       D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area
+       N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+       E1 - OSPF external type 1, E2 - OSPF external type 2
+       i - IS-IS, su - IS-IS summary, L1 - IS-IS level-1, L2 - IS-IS level-2
+       ia - IS-IS inter area, * - candidate default, U - per-user static route
+       o - ODR, P - periodic downloaded static route, H - NHRP, l - LISP
+       a - application route
+       + - replicated route, % - next hop override, p - overrides from PfR
+
+Gateway of last resort is 12.12.12.2 to network 0.0.0.0
+
+i*L1  0.0.0.0/0 [115/10] via 12.12.12.2, 00:04:10, GigabitEthernet0/0
+i L1  192.168.2.0/24 [115/20] via 12.12.12.2, 00:05:26, GigabitEthernet0/0
