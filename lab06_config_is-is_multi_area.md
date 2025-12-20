@@ -200,7 +200,7 @@ write
 ```
 R1(config-if)#do show ip route isis
 ```
-
+<pre>
 Codes: L - local, C - connected, S - static, R - RIP, M - mobile, B - BGP
        D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area
        N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
@@ -215,3 +215,4 @@ Gateway of last resort is 12.12.12.2 to network 0.0.0.0
 
 i*L1  0.0.0.0/0 [115/10] via 12.12.12.2, 00:04:10, GigabitEthernet0/0
 i L1  192.168.2.0/24 [115/20] via 12.12.12.2, 00:05:26, GigabitEthernet0/0
+</pre>
