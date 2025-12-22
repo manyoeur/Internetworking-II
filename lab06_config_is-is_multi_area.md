@@ -127,7 +127,7 @@ router isis
 net 49.0012.0000.0000.0001.00
 exit
 interface gig 0/0
- ip router isis bbu_c101
+ ip router isis
  isis circuit-type level-1
 interface gig 0/1
  ip router isis
