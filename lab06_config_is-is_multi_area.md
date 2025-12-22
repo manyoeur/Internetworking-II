@@ -137,7 +137,7 @@ write
 ```
 ### R2
 ```
-router isis bbu_c101
+router isis
 net 49.0012.0000.0000.0002.00
 exit
 interface gig 0/0
